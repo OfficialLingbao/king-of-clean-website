@@ -1,0 +1,69 @@
+# robots.txt for https://kingofcleandc.com/
+
+User-agent: *
+Allow: /
+Allow: /services
+Allow: /locations
+Allow: /contact
+Allow: /sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://kingofcleandc.com/sitemap.xml
+
+# Disallow admin and system files
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /*.sql
+Disallow: /*.sql.gz
+Disallow: /*.log
+Disallow: /error_log
+Disallow: /error.log
+Disallow: /.git/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Block common crawlers that may overload the server
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Allow Google specific crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Bing
+User-agent: bingbot
+Allow: /
+Crawl-delay: 1
+
+# Host
+Host: https://kingofcleandc.com
