@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navy Yard Cleaning Services - King of Clean DC</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Favicon and App Icons -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
         }
         .neighborhood-hero {
             position: relative;
-            background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('img/navy-yard-hero.jpg') no-repeat center center;
+            background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('/img/navy-yard-hero.jpg') no-repeat center center;
             background-size: cover;
             color: white;
             text-align: center;
@@ -140,7 +140,7 @@
             margin-top: 1rem;
         }
         /* Navigation Styles */
-        nav {
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -151,7 +151,13 @@
             top: 0;
             z-index: 1000;
         }
-        .logo a {
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .logo {
             display: block;
         }
         .logo img {
@@ -200,7 +206,7 @@
         }
         
         @media (max-width: 768px) {
-            nav {
+            .header {
                 flex-wrap: wrap;
                 padding: 1rem;
             }
@@ -221,29 +227,22 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="King of Clean DC Logo">
-                </a>
+                <img src="/img/logo.png" alt="King of Clean DC Logo">
             </div>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="#services">Services</a>
-                <a href="#why-us">Why Choose Us</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#why-us">Why Choose Us</a>
+                <a href="https://g.page/r/CSzKmKEYqZ-1EAE/review">Reviews</a>
                 <a href="https://bookmycleaning.bookingkoala.com/booknow/home_cleaning" class="nav-cta" target="_blank" rel="noopener">Book Now</a>
             </div>
-            <button class="hamburger-menu" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </nav>
     </header>
 
     <main class="neighborhood-page">
-        <section class="neighborhood-hero" style="background-image: url('img/navy-yard-hero.jpg'); position: relative;">
+        <section class="neighborhood-hero" style="background-image: url('/img/navy-yard-hero.jpg'); position: relative;">
             <div class="overlay" style="background: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
             <div class="neighborhood-hero-content">
                 <h1>Navy Yard: Where Cleanliness Meets Maritime Precision</h1>
@@ -322,7 +321,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <img src="img/logo.png" alt="King of Clean DC Logo" class="footer-logo">
+                <img src="/img/logo.png" alt="King of Clean DC Logo" class="footer-logo">
                 <p><i class="fas fa-map-marker-alt"></i> 123 Cleaning St, Washington, DC 20001</p>
                 <p><i class="fas fa-phone"></i> <a href="tel:+18557442154">(855) 741-2154</a></p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:info@kingofcleandc.com">info@kingofcleandc.com</a></p>
@@ -330,13 +329,14 @@
             </div>
             <div class="footer-section">
                 <h3>Service Areas</h3>
-                <ul class="service-areas">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="downtown-dc.html">Downtown DC</a></li>
+                    <li><a href="navy-yard.html">Navy Yard</a></li>
                     <li><a href="capitol-hill.html">Capitol Hill</a></li>
                     <li><a href="georgetown.html">Georgetown</a></li>
                     <li><a href="dupont-circle.html">DuPont Circle</a></li>
                     <li><a href="adams-morgan.html">Adams Morgan</a></li>
-                    <li><a href="navy-yard.html">Navy Yard</a></li>
                 </ul>
             </div>
             <div class="footer-section">

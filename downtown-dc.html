@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downtown DC Cleaning Services - King of Clean DC</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4a0072;
+            --accent-color: #9c27b0;
+            --background-light: #f7f7f7;
+            --text-dark: #333;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        .neighborhood-hero {
+            position: relative;
+            background: linear-gradient(rgba(74,0,114,0.7), rgba(74,0,114,0.7)), url('/img/downtown-dc-hero.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+        }
+        .neighborhood-hero-content {
+            max-width: 800px;
+            z-index: 2;
+            position: relative;
+        }
+        .neighborhood-hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .neighborhood-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .hero-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 1.5rem 0;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .hero-button:hover {
+            background-color: #7b1fa2;
+        }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .hero-stats .stat {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .hero-stats .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+        .neighborhood-features {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        .feature {
+            flex: 1;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        .feature i {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/img/logo.png" alt="King of Clean DC Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#why-us">Why Choose Us</a>
+                <a href="https://g.page/r/CSzKmKEYqZ-1EAE/review">Reviews</a>
+                <a href="https://bookmycleaning.bookingkoala.com/booknow/home_cleaning" class="nav-cta" target="_blank" rel="noopener">Book Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="neighborhood-page">
+        <section class="neighborhood-hero">
+            <div class="neighborhood-hero-content">
+                <h1>Downtown DC: Where Business Meets Brilliance</h1>
+                <p>Premium cleaning services for the heart of the nation's capital</p>
+                <a href="https://bookmycleaning.bookingkoala.com/booknow/home_cleaning" class="hero-button" target="_blank" rel="noopener">Book Your Clean</a>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span>Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9</span>
+                        <span>Average Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span>Availability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="neighborhood-features">
+                    <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-building"></i>
+                        <h3>Business District Excellence</h3>
+                        <ul>
+                            <li>Professional office cleaning</li>
+                            <li>High-traffic area expertise</li>
+                            <li>Flexible scheduling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-star"></i>
+                        <h3>Premium Standards</h3>
+                        <ul>
+                            <li>Detailed cleaning protocols</li>
+                            <li>Professional equipment</li>
+                            <li>Quality assurance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Eco-Conscious Care</h3>
+                        <ul>
+                            <li>Green cleaning products</li>
+                            <li>Sustainable practices</li>
+                            <li>Safe for all spaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="/img/logo.png" alt="King of Clean DC Logo" class="footer-logo">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Cleaning St, Washington, DC 20001</p>
+                <p><i class="fas fa-phone"></i> (855) 744-2154</p>
+                <p><i class="fas fa-envelope"></i> info@kingofcleandc.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#why-us">Why Choose Us</a></li>
+                    <li><a href="https://g.page/r/CSzKmKEYqZ-1EAE/review">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Service Areas</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="downtown-dc.html">Downtown DC</a></li>
+                    <li><a href="navy-yard.html">Navy Yard</a></li>
+                    <li><a href="capitol-hill.html">Capitol Hill</a></li>
+                    <li><a href="georgetown.html">Georgetown</a></li>
+                    <li><a href="dupont-circle.html">DuPont Circle</a></li>
+                    <li><a href="adams-morgan.html">Adams Morgan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 King of Clean DC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
