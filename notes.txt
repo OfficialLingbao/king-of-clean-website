@@ -1,0 +1,9 @@
+The batch file has been created successfully. Now you can easily start your local server by:
+
+Double-clicking the start_server.bat file
+Running it from the Command Prompt
+A few tips:
+
+Keep the Command Prompt window open while you're using the local server
+To stop the server, close the Command Prompt window or press Ctrl+C
+The server will run on http://127.0.0.1:8000
