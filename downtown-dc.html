@@ -23,95 +23,81 @@
         :root {
             --primary-color: #4a0072;
             --accent-color: #9c27b0;
-            --background-light: #f7f7f7;
-            --text-dark: #333;
         }
         
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
         .neighborhood-hero {
             position: relative;
-            background: linear-gradient(rgba(74,0,114,0.7), rgba(74,0,114,0.7)), url('/img/downtown-dc-hero.jpg') no-repeat center center;
-            background-size: cover;
             color: white;
             text-align: center;
-            padding: 6rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 70vh;
+            padding: 100px 20px;
+            background-color: var(--primary-color);
         }
+        
+        .neighborhood-hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        
         .neighborhood-hero-content {
-            max-width: 800px;
-            z-index: 2;
             position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
         }
+        
         .neighborhood-hero h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
         }
+        
         .neighborhood-hero p {
             font-size: 1.2rem;
-            margin-bottom: 2rem;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
         }
+        
         .hero-button {
             display: inline-block;
             background-color: var(--accent-color);
             color: white;
-            padding: 1rem 2rem;
+            padding: 12px 24px;
+            text-decoration: none;
             border-radius: 5px;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin: 1.5rem 0;
             transition: background-color 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
+        
         .hero-button:hover {
             background-color: #7b1fa2;
         }
+        
         .hero-stats {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 40px;
         }
-        .hero-stats .stat {
+        
+        .stat {
             text-align: center;
-            background: rgba(255,255,255,0.1);
-            padding: 1rem;
-            border-radius: 5px;
+            margin: 0 20px;
+            color: white;
         }
-        .hero-stats .stat-number {
+        
+        .stat .stat-number {
             display: block;
             font-size: 2rem;
             font-weight: bold;
-            color: var(--accent-color);
+            margin-bottom: 10px;
         }
-        .neighborhood-features {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: space-between;
-            margin-top: 2rem;
+        
+        .stat span {
+            display: block;
         }
-        .feature {
-            flex: 1;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .feature:hover {
-            transform: translateY(-10px);
-        }
+        
         .feature i {
             font-size: 3rem;
             color: var(--accent-color);
@@ -146,7 +132,6 @@
 
     <main class="neighborhood-page">
         <section class="neighborhood-hero">
-            <div class="overlay"></div>
             <div class="neighborhood-hero-content">
                 <h1>Downtown DC: Professional Cleaning for the City's Heart</h1>
                 <p>Premium cleaning services for Washington's bustling downtown business district</p>

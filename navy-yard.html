@@ -21,123 +21,95 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #003366;
-            --accent-color: #00bcd4;
-            --background-light: #f7f7f7;
-            --text-dark: #333;
+            --primary-color: #0d47a1;
+            --accent-color: #2196f3;
         }
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+        
         .neighborhood-hero {
             position: relative;
-            background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('/img/navy-yard-hero.jpg') no-repeat center center;
-            background-size: cover;
             color: white;
             text-align: center;
-            padding: 4rem 2rem;
+            padding: 100px 20px;
+            background-color: var(--primary-color);
         }
+        
+        .neighborhood-hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .neighborhood-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
         .neighborhood-hero h1 {
-            font-family: 'Poppins', sans-serif;
             font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 20px;
+            color: white;
         }
+        
+        .neighborhood-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.9);
+        }
+        
         .hero-button {
             display: inline-block;
             background-color: var(--accent-color);
             color: white;
-            padding: 1rem 2rem;
+            padding: 12px 24px;
+            text-decoration: none;
             border-radius: 5px;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin: 1.5rem 0;
             transition: background-color 0.3s ease;
         }
+        
         .hero-button:hover {
-            background-color: #0097a7;
+            background-color: #1976d2;
         }
+        
         .hero-stats {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 40px;
         }
-        .hero-stats .stat {
+        
+        .stat {
             text-align: center;
-            background: rgba(255,255,255,0.1);
-            padding: 1rem;
-            border-radius: 5px;
+            margin: 0 20px;
+            color: white;
         }
-        .hero-stats .stat-number {
+        
+        .stat .stat-number {
             display: block;
             font-size: 2rem;
             font-weight: bold;
-            color: var(--accent-color);
+            margin-bottom: 10px;
         }
-        .neighborhood-features {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: space-between;
-            margin-top: 2rem;
+        
+        .stat span {
+            display: block;
         }
-        .feature {
-            flex: 1;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .feature:hover {
-            transform: translateY(-10px);
-        }
+        
         .feature i {
             font-size: 3rem;
             color: var(--accent-color);
             margin-bottom: 1rem;
         }
-        .feature ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .feature ul li {
-            margin-bottom: 0.5rem;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-        .feature ul li:before {
-            content: '✓';
-            color: var(--accent-color);
-            position: absolute;
-            left: 0;
-        }
-        .testimonial-carousel {
+        .footer-content {
             display: flex;
-            gap: 2rem;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: flex-start;
         }
-        .testimonial {
-            max-width: 400px;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .testimonial-author img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-        }
-        .star-rating {
-            color: #ffc107;
-            margin-top: 1rem;
+        .footer-section {
+            margin-right: 20px;
         }
         /* Navigation Styles */
         .header {
@@ -186,7 +158,7 @@
             font-weight: bold;
         }
         .nav-cta:hover {
-            background-color: #0097a7;
+            background-color: #1976d2;
         }
         .hamburger-menu {
             display: none;
@@ -224,14 +196,6 @@
                 display: flex;
             }
         }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .footer-section {
-            margin-right: 20px;
-        }
     </style>
 </head>
 <body>
@@ -251,7 +215,6 @@
 
     <main class="neighborhood-page">
         <section class="neighborhood-hero">
-            <div class="overlay"></div>
             <div class="neighborhood-hero-content">
                 <h1>Navy Yard: Precision Cleaning for Maritime Professionals</h1>
                 <p>Premium cleaning services for Washington's naval and maritime hub</p>
